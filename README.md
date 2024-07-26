@@ -10,6 +10,8 @@
 >
 > Additionaly the user may want to submit images and other feedback or updates about the animals in the app.
 
+> 
+
 ### Backend
 > Consist of Ai models made from tensorflow, a Directory of infomation on each animal and A python code to run as the server.
 
@@ -17,6 +19,8 @@
 >
 > If the image is sent the server will convert the image to an image array and then hand it to the models to predit what animal it is.
 > Then the server looks through the directories to find information on that animal and sends that infromation (as strings with headers) to the frontend.
+>
+> If an animal name is sent over then the server will skip the model prediction step. 
 
 > Currently there isn't anything in place to for how the server and front end communicate.
 >
