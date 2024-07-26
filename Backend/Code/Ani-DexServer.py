@@ -13,6 +13,13 @@ from tensorflow.keras.models import Sequential
 
 
 def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,specialEncodings):
+""" Loads the models for identifing the animal images. Also loads the encoding for the outputs and what they link to
+    The main model is tells which animal group the image belongs to 
+    The sub models tell which animal in the group the image belongs to
+    The special models tell which speciesbreed of that animal the species belongs to. 
+    Though not all animals have a special model. Some end a sub model.
+"""
+    
     # getting the encoding...
     try:
         encodingFile = open("Models\\Encoding\\mainEncode.txt","r")
@@ -73,6 +80,11 @@ def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,speci
     return mainModel, mainEncoding, subModels, subEncodings, specialModels, specialEncodings
 
 def MakePrediction(img_arr, mainModel, mainEncoding, subModels, subEncodings, specialModels, specialEncodings):
+    """ Takes an image array (img_arr) an identifies what animal the image is depicting. 
+        The img_arr is a three dimessional array (3 dimenssions for each colour chanel) that has the values 0 to 255 for representing the intensity or the pixle of that colour chanel
+        An 240x240 pixle image will have an image array shape of (240,240,3). i.e: img_arr.shape = (240,240,3). 
+    """
+    
     main_inputdetails = mainModel.get_input_detials()
     main_inputdict = { input_detail:img_arr for input_detail in main_inputdetails}
     
