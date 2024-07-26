@@ -4,7 +4,7 @@
 > Thre fontend is the image of the program, meant to run on mobile devices.
 
 > The user has three main ways of using the app.
-> 1) Taking a picture ("scanning") an animal to find out what it is. In doing so the image must also be stored on the phone (some where to be found later)
+> 1) Taking a picture ("scanning") an animal to find out what it is. In doing so the image should also be stored on the phone (some where to be found later)
 > 2) Searching for a desired animal in the search bar.
 > 3) Viewing previously scanned animals
 >
