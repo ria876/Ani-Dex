@@ -9,11 +9,14 @@
 > 3) Viewing previously scanned animals
 >
 > In the event of action 1 or 2 the image or search name will be sent to the server.
-> Additionaly the user may want to submit images and other feedback or updates about the animals in the app.
 
 > After receiving the results form the server (in case the user does, action 1 or 2) the front end will display this info.
 >
 > In case of action 3, the frontend will just search the users phone of the images it took.
+
+> #### Optionals
+> > Additionaly the user may want to submit images and other feedback or updates about the animals in the app.
+> > In the case of action 2, the backend may send an image to the frontend
 
 ### Backend
 > Consist of Ai models made from tensorflow, a Directory of infomation on each animal and A python code to run as the server.
