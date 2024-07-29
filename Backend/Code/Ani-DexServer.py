@@ -13,13 +13,12 @@ from tensorflow.keras.models import Sequential
 
 
 def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,specialEncodings):
-""" Loads the models for identifing the animal images. Also loads the encoding for the outputs and what they link to
-    The main model is tells which animal group the image belongs to 
-    The sub models tell which animal in the group the image belongs to
-    The special models tell which speciesbreed of that animal the species belongs to. 
-    Though not all animals have a special model. Some end a sub model.
-"""
-    
+    """ Loads the models for identifing the animal images. Also loads the encoding for the outputs and what they link to
+        The main model is tells which animal group the image belongs to 
+        The sub models tell which animal in the group the image belongs to
+        The special models tell which speciesbreed of that animal the species belongs to. 
+        Though not all animals have a special model. Some end a sub model.
+    """
     # getting the encoding...
     try:
         encodingFile = open("Models\\Encoding\\mainEncode.txt","r")
@@ -34,7 +33,9 @@ def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,speci
         for line in encodingFile:
             group_name, group_encoding = line.split('[')
             group_encoding.removesuffix("]")
-            subEncodings[group_name] = {index:label for index, label in group_encoding.lower.split(',')}
+            labels = group_encoding.lower.split(', ')
+            labels.sort()
+            subEncodings[group_name] = {index:label for index, label in labels}
         encodingFile.close()
     except Exception as e:
         raise Exception("[Error in LoadModels:sub models encoding]",e)
@@ -44,7 +45,9 @@ def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,speci
         for line in encodingFile:
             animal_name, special_encoding = line.split('[')
             special_encoding.removesuffix("]")
-            specialEncodings[animal_name] = {index:label for index, label in special_encoding.lower.split(',')}
+            labels = special_encoding.lower.split(', ')
+            labels.sort()
+            specialEncodings[animal_name] = {index:label for index, label in labels}
         encodingFile.close()
     except Exception as e:
         raise Exception("[Error in LoadModels:special models encoding]",e)
@@ -106,19 +109,92 @@ def MakePrediction(img_arr, mainModel, mainEncoding, subModels, subEncodings, sp
     specific_prediction = specialEncodings[final_prediction][special_prediction]
     
     return (final_prediction,True,specific_prediction)    
+
+def MakePredictions(img_arr, mainModel, mainEncoding, subModels, subEncodings, specialModels, specialEncodings):
+    """ Same thing as MakePrediction but gives the two top most likly species
+    """
     
+    main_inputdetails = mainModel.get_input_detials()
+    main_inputdict = { input_detail:img_arr for input_detail in main_inputdetails}
+    
+    main_prediction = tf.nn.softmax(mainModel(**main_inputdict)['outputs'])
+    group_label = mainEncoding[np.argmax(main_prediction)]
+    
+    sub_inputdetails = subModels[group_label].get_input_details()
+    sub_inputdict = { input_detail:img_arr for input_detail in sub_inputdetails}
+    
+    sub_prediction = tf.nn.softmax(subModels[group_label](**sub_inputdict)['outputs'])
+    final_prediction = subEncodings[group_label][np.argmax(sub_prediction)]
+    
+    if final_prediction not in specialEncodings.keys(): return (final_prediction,False,None)
+    
+    special_inputdetails = specialModels[final_prediction].get_input_details()
+    special_inputdict = { input_detail:img_arr for input_detail in special_inputdetails}
+    
+    specific_predictions = []
+    scores = specialModels[final_prediction](**special_inputdict)['outputs']
+    for _ in range(2):
+        special_prediction = tf.nn.softmax(scores)
+        specific_predictions.append(specialEncodings[final_prediction][special_prediction])
+        scores.pop(special_prediction)
+        
+    return (final_prediction,True,specific_predictions)  
+
 def LoadAnimalInfo(animal_type,animal_specific,special_types):
     FILE_PATH = "AnimalInfo\\" + animal_type
-    if animal_type in special_types: FILE_PATH = FILE_PATH + "\\" + animal_specific + ".txt"
-    else: FILE_PATH = FILE_PATH + ".txt"
+    if animal_type in special_types: FILE_PATH = FILE_PATH + "\\" + animal_specific + "\\"+animal_specific+ ".txt"
+    else: FILE_PATH = FILE_PATH + "\\" + animal_type +".txt"
     
     info = {}
     animal_file = open(FILE_PATH,"r")
     for line in animal_file:
+        # breakpoint()
+        if len(line.split(":/:")) != 2: raise Exception(f"[LoadAnimalInfo] file {FILE_PATH} contians an invalid line")
         header, content = line.split(":/:")
-        info[header] = content
+        info[header] = content.replace("\n","")
     
+    info["Link"] = info["Link"].split("||")
     return info
+
+def LoadAnimalInfo_FromSearchBar(animal_name,special_types):
+    specialGroup={
+        "bengal":"cat",
+        "bombay":"cat",
+        "dilute Tortoiseshell":"cat",
+        "calico":"cat",
+        "ayrshire cattle":"cattle",
+        "brown swiss cattle":"cattle",
+        "holstein cattle":"cattle",
+        "jersey cattle":"cattle",
+        "red dane cattle":"cattle",
+        "toy terrier":"dog",
+        "beagle":"dog",
+        "ttalian greyhound":"dog",
+        "reddone":"dog",
+        "shih tzu":"dog",
+        "paplillon":"dog",
+        "english fox hound":"dog",
+        "capped heron":"bird",
+        "egyptian goose":"bird",
+        "mandarin duck":"bird",
+        "red-Tailed hawk":"bird",
+        "scarlet ibis":"bird",
+        "takahe":"bird",
+    }
+    
+    found_check = [animal_name.lower() == key.lower() for key in specialGroup.keys()] 
+    if not any(found_check) and target not in special_types:return LoadAnimalInfo(animal_name.lower(),"",special_types)
+    elif any(found_check): return LoadAnimalInfo(specialGroup[animal_name.lower()],animal_name.lower(),special_types)
+    
+def PartialyFound(target:str,lst:list[str]):
+    founded = []
+    for term in lst:
+        if target in term: return True
+    return False
 
 def SetUpConnection():
     pass
+
+
+# Variables that are well needed for the exicution of the server. Once it's complete
+special_types = ["dog","bird","cat","cattle"]

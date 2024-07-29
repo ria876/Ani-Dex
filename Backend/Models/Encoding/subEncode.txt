@@ -1,0 +1,5 @@
+Group A[tiger, lion, cat, cheetah]
+Group B[bear, dog]
+Group C[camel, cattle, zebra]
+Group D[bird, butterfly, caterpillar]
+Group E[crab, crocodile, snake]

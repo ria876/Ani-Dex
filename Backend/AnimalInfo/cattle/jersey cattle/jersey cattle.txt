@@ -1,0 +1,7 @@
+Animal Type:/:Cattle
+Species/Breed:/:Jersey Cattle
+Life Span:/:15-20 yrs
+Locations:/:Originated in Europe, in British territory.
+Population Size:/:n/a
+Lifestyle:/:Light brown breed of cattle that look similar to the Brown-Swiss. Very heat tolerant and adaptive. Also know for there grazing.
+Link:/:https://breeds.okstate.edu/cattle/jersey-cattle.html||https://www.britannica.com/animal/Jersey-breed-of-cattle

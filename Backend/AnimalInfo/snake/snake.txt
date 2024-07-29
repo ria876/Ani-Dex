@@ -1,0 +1,7 @@
+Animal Type:/:Snake
+Species/Breed:/:
+Life Span:/:About 30 yrs
+Locations:/:Found Worldwide. The specific habitat is species dependent
+Population Size:/:Species dependent
+Typical Behavior:/:
+Link:/:

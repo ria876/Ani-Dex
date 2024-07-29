@@ -1,0 +1,7 @@
+Animal Type:/:Cattle
+Species/Breed:/:Holstein Friesian Cattle
+Life Span:/:20 yrs
+Lifestyle:/:Originated in Europe
+Population Size:/:unavailable
+Typical Behavior:/:Black and white dairy cows, typically not very good at handling heat.
+Link:/:https://www.ciwf.org.uk/media/5235185/the-life-of-dairy-cows.pdf||https://www.thecattlesite.com/breeds/dairy/22/holstein
