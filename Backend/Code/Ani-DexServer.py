@@ -84,7 +84,8 @@ def LoadModels(mainModel,mainEncoding,subModels,subEncodings,specialModels,speci
 
 def MakePrediction(img_arr, mainModel, mainEncoding, subModels, subEncodings, specialModels, specialEncodings):
     """ Takes an image array (img_arr) an identifies what animal the image is depicting. 
-        The img_arr is a three dimessional array (3 dimenssions for each colour chanel) that has the values 0 to 255 for representing the intensity or the pixle of that colour chanel
+        The img_arr is a three dimessional array (3 dimenssions for each colour chanel) that has the values 0 to 255 for representing the 
+        intensity or the pixle of that colour chanel
         An 240x240 pixle image will have an image array shape of (240,240,3). i.e: img_arr.shape = (240,240,3). 
     """
     
