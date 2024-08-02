@@ -1,0 +1,7 @@
+Animal Type:/:Cat
+Species/Breed:/:Himalayan Cats
+Lifespan:/:9-15 years
+Appearance:/:Long, fluffy coat with color points similar to a Siamese (ears, face, paws, and tail). Large, round eyes, often blue, and a flat or slightly rounded face.
+Personality:/:Gentle, affectionate, and often quiet. Enjoys a calm environment and can be lap cats. May be playful but generally less active than some other breeds.
+Health:/:Prone to respiratory issues due to their flat faces (brachycephalic). Other health concerns include polycystic kidney disease (PKD) and dental issues.
+Care:/:Requires regular grooming to prevent matting and hairballs due to their long coat. Needs regular veterinary check-ups to monitor for potential health issues.

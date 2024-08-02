@@ -1,0 +1,8 @@
+Animal Type:/: Dog
+Species/Breed:/:Italian Greyhound (Greyhound)
+Origin:/: Italy
+Size:/: Small to medium, weighing between 7-14 pounds.
+Appearance:/: Graceful and slender, with a short, smooth coat that comes in various colors. They have long legs and a fine-boned structure.
+Temperament:/: Gentle, affectionate, and playful. They are known for their speed and agility.
+Lifespan:/: 12-15 years
+Health:/: Can be prone to dental issues, patellar luxation, and leg fractures.

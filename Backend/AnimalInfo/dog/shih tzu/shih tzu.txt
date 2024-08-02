@@ -1,0 +1,8 @@
+Animal Type:/:Dog
+Species/Breed:/:Shih Tzu
+Origin:/: China
+Size:/: Small, weighing between 9-16 pounds.
+Appearance:/: Sturdy and compact, with a long, flowing double coat that can come in various colors. They have a short muzzle and large, dark eyes.
+Temperament:/: Affectionate, friendly, and outgoing. They are known for their charming and loyal nature.
+Lifespan:/: 10-18 years
+Health:/: Can be prone to brachycephalic syndrome, hip dysplasia, and eye problems.

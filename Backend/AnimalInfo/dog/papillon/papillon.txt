@@ -1,0 +1,8 @@
+Animal Type:/:Dog
+Species/Breed:/:Papillon
+Origin:/: France/Spain
+Size:/: Small, weighing between 5-10 pounds.
+Appearance:/: Delicate and fine-boned, with a long, silky coat and large, butterfly-like ears. They come in various colors, usually white with patches of color.
+Temperament:/: Intelligent, lively, and friendly. They are known for their agility and trainability.
+Lifespan:/: 12-16 years
+Health:/: Generally healthy, but can be prone to patellar luxation and dental issues.

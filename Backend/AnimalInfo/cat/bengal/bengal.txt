@@ -1,0 +1,7 @@
+Animal Type:/:Cat
+Species/Breed:/:Bengal Cats
+Lifespan:/: 12-16 years
+Appearance:/:Distinctive spotted or marbled coat resembling that of a wild leopard or ocelot. Typically have a sleek, muscular build with large eyes and prominent cheekbones.
+Personality:/:Active, playful, and highly intelligent. Enjoys climbing, playing fetch, and interactive toys. Often more vocal than other breeds and may form strong bonds with their owners.
+Health:/:Generally healthy but can be prone to certain genetic conditions like progressive retinal atrophy (PRA) and hypertrophic cardiomyopathy (HCM).
+Care:/:Require regular playtime and mental stimulation to prevent boredom. Need occasional grooming to maintain their short coat.

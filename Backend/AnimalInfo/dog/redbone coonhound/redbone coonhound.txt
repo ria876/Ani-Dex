@@ -1,0 +1,8 @@
+Animal Type:/:Dog
+Species/Breed:/:Redbone Coonhound
+Origin:/: United States
+Size:/: Medium to large, weighing between 45-70 pounds.
+Appearance:/: Muscular and well-proportioned, with a short, smooth coat that is rich red in color. They have long ears and a distinctive, melodious bark.
+Temperament:/: Friendly, energetic, and eager to please. They are excellent hunters and trackers.
+Lifespan:/: 12-14 years
+Health:/: Generally healthy, but can be prone to hip dysplasia and ear infections.

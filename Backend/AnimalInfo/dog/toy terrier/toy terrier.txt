@@ -1,0 +1,8 @@
+Animal Type:/:Dog
+Species/Breed:/:Toy Terrier
+Origin:/: England
+Size:/: Small, typically weighing between 6-7 pounds.
+Appearance:/: Sleek and elegant, with a fine coat that can be black and tan. They have a narrow head, erect ears, and a tail usually carried high.
+Temperament:/: Energetic, alert, and affectionate. They are known for their lively and playful nature.
+Lifespan:/: 12-15 years
+Health:/: Generally healthy, but can be prone to issues such as patellar luxation and heart problems.

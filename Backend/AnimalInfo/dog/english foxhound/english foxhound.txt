@@ -1,0 +1,8 @@
+Animal Type:/:Dog
+Species/Breed:/:English Foxhound
+Origin:/: England
+Size:/: Medium to large, weighing between 60-75 pounds.
+Appearance:/: Sturdy and athletic, with a short, dense coat that is typically tricolor (black, white, and tan). They have a broad skull and strong, muscular build.
+Temperament:/: Sociable, gentle, and friendly. They are excellent hunters and pack dogs.
+Lifespan:/: 10-13 years
+Health:/: Generally healthy, but can be prone to hip dysplasia and ear infections.

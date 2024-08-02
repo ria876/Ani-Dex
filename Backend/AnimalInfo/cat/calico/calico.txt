@@ -1,0 +1,7 @@
+Animal Type:/:Cat
+Species/Breed:/:Calico Cats
+Lifespan:/:12-16 years
+Appearance:/:Tri-colored coat pattern (white, black, and orange) with patches of each color. The pattern can appear in long or short-haired cats and is most common in females.
+Personality:/:Varies widely, as calico is a color pattern rather than a specific breed. Often described as independent, affectionate, and sometimes feisty.
+Health:/:Similar to other cats of the same breed; no specific health issues tied to the calico pattern. Male calicos are rare and usually sterile due to genetic factors.
+Care:/:Care requirements depend on the breed; regular grooming and healthcare are essential.

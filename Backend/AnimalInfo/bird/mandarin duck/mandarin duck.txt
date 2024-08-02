@@ -1,0 +1,7 @@
+Animal Type:/: Bird
+Species/Breed:/: Mandarin Duck (Aix galericulata)
+Lifespan:/: 3-12 yrs
+Locations:/:Mandarin ducks breed in eastern Siberia, Japan, and China, and winter in Japan and southern China. 
+Population:/:Depends heavily on the region but generally ranges between 60 - 100,000
+Lifestyle:/: Social, Migrant, Monogamous, Semi-Aquatic, Congregators, Flocking. Mandarin ducks are omnivores, but their diet changes seasonally. In the cold season, they eat water plants and grains such as rice. When it's warm they eat insects, snails, small fish, and worms.
+Link:/:

@@ -1,0 +1,7 @@
+Animal Type:/: Bird 
+Species/Breeds:/: Egyptian Goose (Alopochen aegyptiacus)
+Lifespan:/: 15 years
+Locations:/: It is native to Africa, Feral populations have become established in Western Europe, the United States, and New Zealand.
+Population:/:unavailabe
+Lifestyle:/: Diurnal, Semiaquatic, Non-migrant, territorial, social, monogamous. Egyptian geese are primarily herbivores, feeding on grass, seeds and other types of vegetables. They also eat worms and locusts.
+Link:/:

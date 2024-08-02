@@ -1,0 +1,7 @@
+Animal Type:/:Bird
+Species/Breed:/:Capped Heron(Pilherodius pileatus)
+Lifespan:/: 20 yrs
+Locations:/:Originates from Lowlands of South America, barely extending into eastern Panama
+Population:/: unavailable
+Lifestyle:/: Capped herons hunt mainly for fish, but also aquatic insects and larvae, tadpoles, and frogs. They are Terrestrial, Congregators and Non-Migrant
+Link:/: 

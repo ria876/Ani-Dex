@@ -1,0 +1,8 @@
+Animal Type:/: Cat
+Species/Breed:/:Bombay
+Origin:/: United States
+Size:/: Medium, weighing between 6-11 pounds.
+Appearance:/: Sleek and muscular, with a short, glossy black coat and copper or gold eyes. They resemble miniature panthers.
+Temperament:/: Affectionate, playful, and people-oriented. They are known for their social and outgoing nature.
+Lifespan:/: 12-16 years
+Health:/: Generally healthy, but can be prone to respiratory issues and obesity.

@@ -1,0 +1,7 @@
+Animal Type:/:Bird
+Species/Breed:/: Takahe (Porphyrio hochstetteri)
+Locations:/: South Island takahē are native to New Zealand.
+Lifespan:/: 20 years
+Lifestyle:/: Diurnal, Terrestrial, Non-Migrant, Social, Monogamous. These birds are herbivorous (graminivorous, folivorous). They eat predominantly leaves of Chionochloa tussocks and other alpine grass species. Their diet also includes grass, shoots, and some insects.
+Population:/: According to IUCN Red List, the total population size of the South Island takahē is 418 individuals with approximately 130 breeding pairs. Currently, this species is classified as Endangered (EN) on the IUCN Red List but its numbers today are increasing.
+Link:/:
