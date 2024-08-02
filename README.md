@@ -1,22 +1,21 @@
 # Ani-Dex: the mobile digital encyclopedia
 ## Project So far
 ### Frontend
-> Thre fontend is the image of the program, meant to run on mobile devices.
-
-> The user has three main ways of using the app.
-> 1) Taking a picture ("scanning") an animal to find out what it is. In doing so the image should also be stored on the phone (some where to be found later)
-> 2) Searching for a desired animal in the search bar.
-> 3) Viewing previously scanned animals
+> The frontend was made on Unity AndroidSDK with C# language.
+> 
+> It is the face of all the operations of Ani-Dex offering the user the ability to:
+> 1) Take pictures with there camera and receive info about the animal infront of them.
+> 2) See previously scaned images.
+> 3) And just search of the animal by name
 >
-> In the event of action 1 or 2 the image or search name will be sent to the server.
-
-> After receiving the results form the server (in case the user does, action 1 or 2) the front end will display this info.
+> Connected through the backend over Http connection. Though currently it wouldn't be fit for android devices.
+> For some reason it's not able to talk to the backend when on mobile. It's most likly that I didn't use the right code, but it could also be a permissions
+> issue with android devices.
 >
-> In case of action 3, the frontend will just search the users phone of the images it took.
+> For action 1 images are resized and sent over to the backend where they are processed and the results plus additional information is sent to the frontend of the program.
+> For action 2 the server is uninvolved as the frontend just take from the local storage.
+> For action 3 the client makes a request for the information by name. This is similar to acion 1 but it skips over the image rec part.
 
-> #### Optionals
-> > Additionaly the user may want to submit images and other feedback or updates about the animals in the app.
-> > In the case of action 2, the backend may send an image to the frontend
 
 ### Backend
 > Consist of Ai models made from tensorflow, a Directory of infomation on each animal and A python code to run as the server.
@@ -28,9 +27,4 @@
 >
 > If an animal name is sent over then the server will skip the model prediction step. 
 
-> Currently there isn't anything in place to for how the server and front end communicate.
->
-> Also sending an image maybe too large to send as a single message so the image maybe compressed if there is a reliable way to decompress it. Though if send the image ins't taxing, then just send it.
-> The image could also be sent in multiple messages.
-
-> The models are being refined and will be uplaoded later.
+> The server is runs and connects to the frontend using Flask API. HTTP url allow the client to send request an the server replies.
