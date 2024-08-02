@@ -14,3 +14,6 @@
 > > As said before Components define the behavour of Game Objects (eg: Move on these given inputs, Switch Scenes at this time, Give Rigidbody Physics, etc).
 > > Components can be built-in, or custom made. Some basic components are built-in such as Panels, Buttons, Images, Grid Layouts. Custom components
 > > have to be programed maniually by the Dev (unually in C#).
+>
+> There is also the latest build included in the reposotiory.
+> 
