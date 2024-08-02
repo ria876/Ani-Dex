@@ -1,0 +1,4 @@
+cattle[ayrshire cattle, brown swiss cattle, holstein friesian cattle, jersey cattle, red dane cattle]
+dog[beagle, english foxhound, papillon, redbone, shih tzu, toy terrier]
+cat[bengal, bombay, calico, dilute tortoiseshell, himalayan]
+bird[capped heron, egyptian goose, red c:\Users\ArtBot\Desktop\Python Projects\Capstone Sample\OmniModel\models\main_model_v6.tflitetailed hawk, scarlet ibis, takahe]

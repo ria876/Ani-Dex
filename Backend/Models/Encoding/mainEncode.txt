@@ -1,1 +1,1 @@
-Group A, Group B, Group C, Group D, Group E
+GroupA, GroupB, GroupC, GroupD, GroupE, GroupF
