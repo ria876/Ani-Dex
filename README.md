@@ -28,3 +28,10 @@
 > If an animal name is sent over then the server will skip the model prediction step. 
 
 > The server is runs and connects to the frontend using Flask API. HTTP url allow the client to send request an the server replies.
+
+### Extra's
+> There are also the Juypter Notebooks used to make the model in this repositiory. And the links to the datasets will be included shortly.
+>
+> In the backend and frontend, there is a feature that never got implemented fully. It would allow the app the add more information about creatures by
+> stating potential mixed breeds.
+> But this could not be finish in time. Maybe later it can be finialised.
